@@ -1,410 +1,419 @@
-export let products = [
+const products = [
   {
-    "id": 345,
-    "productId": 345,
-    "productName": "iPhone 16 Pro",
-    "productSlug": "iphone-16-pro",
-
-    "thumbnailImage": "iPhone16pro.png",
+    "id": 121,
+    "productId": 121,
+    "productName": "iPhone 5s",
+    "productSlug": "iphone-5s",
+    "productDesc": "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae alias delectus harum saepe nemo voluptatibus veniam, magni veritatis, maiores fuga aliquam ratione? Quis!"
+    , "thumbnailImage": "https://cdn.dummyjson.com/product-images/smartphones/iphone-5s/thumbnail.webp",
     "productImages": [
-      "iPhone16pro_1.png",
-      "iPhone16pro_2.png",
-      "iPhone16pro_3.png"],
-    "stockCount": 13,
+      "https://cdn.dummyjson.com/product-images/smartphones/iphone-5s/1.webp",
+      "https://cdn.dummyjson.com/product-images/smartphones/iphone-5s/2.webp",
+      "https://cdn.dummyjson.com/product-images/smartphones/iphone-5s/3.webp"
+    ],
+    "stockCount": 25,
     "salesCount": 47,
     "isAvailable": true,
     "category": "Mobiles",
     "subCategory": "iPhones",
-    "unitPrice": 119800,
-    "sellingPrice": 108600,
-    "offerPrice": 102450,
-    "discount": 14
-  },
-  {
-    "id": 451,
-    "productId": 451,
-    "productName": "OnePlus Nord CE",
-    "productSlug": "oneplus-nord-ce",
-    "thumbnailImage": "onePlusNord.png",
-    "productImages": [
-      "onePlusNord_1.png",
-      "onePlusNord_2.png",
-      "onePlusNord_3.png"],
-    "stockCount": 36,
-    "salesCount": 29,
-    "isAvailable": true,
-    "category": "Mobiles",
-    "subCategory": "Android Phones",
-    "unitPrice": 23900,
-    "sellingPrice": 20500,
-    "offerPrice": 18750,
-    "discount": 22
-  },
-  {
-    "id": 745,
-    "productId": 745,
-    "productName": "iPad 11-inch (A16)",
-    "productSlug": "ipad-11-inch-a16",
-    "thumbnailImage": "iPad.png",
-    "productImages": [
-      "iPad_1.png",
-      "iPad_2.png",
-      "iPad_3.png"],
-    "stockCount": 19,
-    "salesCount": 34,
-    "isAvailable": true,
-    "category": "Tablets",
-    "subCategory": "Apple Tablets",
-    "unitPrice": 39750,
-    "sellingPrice": 35100,
-    "offerPrice": 32400,
-    "discount": 18
-  },
-  {
-    "id": 321,
-    "productId": 321,
-    "productName": "Lenovo IOQ Gaming Laptop",
-    "productSlug": "lenovo-loq-gaming-laptop",
-    "thumbnailImage": "lenovoGamingLaptop",
-    "productImages": [
-      "lenovoGamingLaptop_1.png",
-      "lenovoGamingLaptop_2.png",
-      "lenovoGamingLaptop_3.png"
-    ],
-    "stockCount": 7,
-    "salesCount": 16,
-    "isAvailable": true,
-    "category": "Laptops",
-    "subCategory": "Gaming Laptops",
-    "unitPrice": 88700,
-    "sellingPrice": 78100,
-    "offerPrice": 72150,
-    "discount": 19
-  },
-  {
-    "id": 832,
-    "productId": 832,
-    "productName": "MacBook Air M4 images",
-    "productSlug": "macbook-air-m4",
-    "thumbnailImage": "macBookAirM4.png",
-    "productImages": [
-      "macBookAirM4_1.png",
-      "macBookAirM4_2.png",
-      "macBookAirM4_3.png"
-    ],
-    "stockCount": 11,
-    "salesCount": 38,
-    "isAvailable": true,
-    "category": "Laptops",
-    "subCategory": "Apple Laptops",
-    "unitPrice": 113500,
-    "sellingPrice": 104200,
-    "offerPrice": 97400,
-    "discount": 14
-  },
-  {
-    "id": 798,
-    "productId": 798,
-    "productName": "HP Pavilion",
-    "productSlug": "hp-pavilion",
-    "thumbnailImage": "hpPavilion.png",
-    "productImages": [
-      "hpPavilion_1.png",
-      "hpPavilion_2.png",
-      "hpPavilion_3.png"
-    ],
-    "stockCount": 24,
-    "salesCount": 31,
-    "isAvailable": true,
-    "category": "Laptops",
-    "subCategory": "Business Laptops",
-    "unitPrice": 68400,
-    "sellingPrice": 61500,
-    "offerPrice": 56850,
-    "discount": 17
-  },
-  {
-    "id": 622,
-    "productId": 622,
-    "productName": "boAt Airdopes 141",
-    "productSlug": "boat-airdopes-141",
-    "thumbnailImage": "boatAirdopes.png",
-    "productImages": [
-      "boatAirdopes_1.png",
-      "boatAirdopes_2.png",
-      "boatAirdopes_3.png"
-    ],
-    "stockCount": 73,
-    "salesCount": 91,
-    "isAvailable": true,
-    "category": "EarBuds",
-    "subCategory": "Wireless Earbuds",
-    "unitPrice": 1890,
-    "sellingPrice": 1420,
-    "offerPrice": 1180,
-    "discount": 38
-  },
-  {
-    "id": 326,
-    "productId": 326,
-    "productName": "Apple AirPods 4",
-    "productSlug": "apple-airpods-4",
-    "thumbnailImage": "appleAirPods.png",
-    "productImages": [
-      "appleAirPods_1.png",
-      "appleAirPods_2.png",
-      "appleAirPods_3.png"
-    ],
-    "stockCount": 15,
-    "salesCount": 63,
-    "isAvailable": true,
-    "category": "EarBuds",
-    "subCategory": "Apple Earbuds",
-    "unitPrice": 14900,
-    "sellingPrice": 13600,
-    "offerPrice": 12750,
-    "discount": 14
-  },
-  {
-    "id": 982,
-    "productId": 982,
-    "productName": "Realme Buds Air 6",
-    "productSlug": "realme-buds-air-6",
-    "thumbnailImage": "realmeBuds.png",
-    "productImages": [
-      "realmeBuds_1.png",
-      "realmeBuds_2.png",
-    ],
-    "stockCount": 41,
-    "salesCount": 52,
-    "isAvailable": true,
-    "category": "EarBuds",
-    "subCategory": "Wireless Earbuds",
-    "unitPrice": 3990,
-    "sellingPrice": 3260,
-    "offerPrice": 2860,
-    "discount": 28
-  },
-  {
-    "id": 458,
-    "productId": 458,
-    "productName": "Samsung Galaxy Watch",
-    "productSlug": "samsung-galaxy-watch",
-    "thumbnailImage": "samsungGalaxyWatch.png",
-    "productImages": [
-      "samsungGalaxyWatch_1.png",
-      "samsungGalaxyWatch.png_2",
-      "samsungGalaxyWatch_3.png"
-    ],
-    "stockCount": 8,
-    "salesCount": 27,
-    "isAvailable": true,
-    "category": "Smart Watches",
-    "subCategory": "Android Smart Watches",
-    "unitPrice": 29200,
-    "sellingPrice": 26400,
-    "offerPrice": 24100,
-    "discount": 17
-  },
-  {
-    "id": 156,
-    "productId": 156,
-    "productName": "Noise ColorFit Pulse",
-    "productSlug": "noise-colorfit-pulse",
-    "thumbnailImage": "fitnessSmartWatch.png",
-    "productImages": [
-      "fitnessSmartWatch_1.png",
-      "fitnessSmartWatch_2.png"
-    ],
-    "stockCount": 52,
-    "salesCount": 76,
-    "isAvailable": true,
-    "category": "Smart Watches",
-    "subCategory": "Fitness Smart Watches",
-    "unitPrice": 2290,
-    "sellingPrice": 1760,
-    "offerPrice": 1420,
-    "discount": 38
-  },
-  {
-    "id": 222,
-    "productId": 222,
-    "productName": "Nikon D5600",
-    "productSlug": "nikon-d5600",
-    "thumbnailImage": "nikonCamera.png",
-    "productImages": [
-      "nikonCamera_1.png",
-      "nikonCamera_2.png"
-    ],
-    "stockCount": 5,
-    "salesCount": 18,
-    "isAvailable": true,
-    "category": "Cameras",
-    "subCategory": "DSLR Cameras",
-    "unitPrice": 56800,
-    "sellingPrice": 51200,
-    "offerPrice": 47100,
-    "discount": 17
-  },
-  {
-    "id": 444,
-    "productId": 444,
-    "productName": "HP Wired Keyboard",
-    "productSlug": "hp-wired-keyboard",
-    "thumbnailImage": "keyboard.png",
-    "productImages": [
-      "keyboard_1.png",
-      "keyboard_2.png"
-    ],
-    "stockCount": 68,
-    "salesCount": 103,
-    "isAvailable": true,
-    "category": "Computer Accessories",
-    "subCategory": "Keyboards",
-    "unitPrice": 890,
-    "sellingPrice": 690,
-    "offerPrice": 560,
-    "discount": 37
-  },
-  {
-    "id": 155,
-    "productId": 155,
-    "productName": "LG Microwave Oven",
-    "productSlug": "lg-microwave-oven",
-    "thumbnailImage": "microwaveOven.png",
-    "productImages": [
-      "microwaveOven_1.png",
-      "microwaveOven_2.png"
-    ],
-    "stockCount": 17,
-    "salesCount": 28,
-    "isAvailable": true,
-    "category": "Kitchen Appliances",
-    "subCategory": "Microwave Ovens",
-    "unitPrice": 18200,
-    "sellingPrice": 15900,
-    "offerPrice": 14650,
-    "discount": 20
-  },
-  {
-    "id": 700,
-    "productId": 700,
-    "productName": "Samsung 8 kg Front Load",
-    "productSlug": "samsung-8kg-front-load",
-    "thumbnailImage": "washingMachine.png",
-    "productImages": [
-      "washingMachine_1.png",
-      "washingMachine_2.png"
-    ],
-    "stockCount": 6,
-    "salesCount": 23,
-    "isAvailable": true,
-    "category": "Washing Machines",
-    "subCategory": "Front Load Washing Machines",
-    "unitPrice": 42800,
-    "sellingPrice": 37400,
-    "offerPrice": 34100,
-    "discount": 20
-  },
-  {
-    "id": 341,
-    "productId": 341,
-    "productName": "Whirlpool 190 L Single Door",
-    "productSlug": "whirlpool-190l-single-door",
-    "thumbnailImage": "refrigerator.png",
-    "productImages": [
-      "refrigerator_1.png",
-      "refrigerator_2.png",
-      "refrigerator_3.png",
-    ],
-    "stockCount": 21,
-    "salesCount": 35,
-    "isAvailable": true,
-    "category": "Refrigerators",
-    "subCategory": "Single Door Refrigerators",
-    "unitPrice": 18700,
-    "sellingPrice": 16400,
-    "offerPrice": 15180,
-    "discount": 19
-  },
-  {
-    "id": 454,
-    "productId": 454,
-    "productName": "Philips Mixer Grinder",
-    "productSlug": "philips-mixer-grinder",
-    "thumbnailImage": "mixerGrinder.png",
-    "productImages": [
-      "mixerGrinder_1.png",
-      "mixerGrinder_2.png"
-    ],
-    "stockCount": 33,
-    "salesCount": 57,
-    "isAvailable": true,
-    "category": "Kitchen Appliances",
-    "subCategory": "Mixer Grinders",
-    "unitPrice": 4790,
-    "sellingPrice": 3860,
-    "offerPrice": 3370,
-    "discount": 30
+    "unitPrice": 18900,
+    "sellingPrice": 16900,
+    "offerPrice": 14900,
+    "discount": 21
   },
   {
     "id": 122,
     "productId": 122,
-    "productName": "Samsung 43-inch 4K TV ",
-    "productSlug": "samsung-43-inch-4k-tv",
-    "thumbnailImage": "tv.png",
+    "productName": "iPhone 6",
+    "productSlug": "iphone-6", "productDesc": "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae alias delectus harum saepe nemo voluptatibus veniam, magni veritatis, maiores fuga aliquam ratione? Quis!"
+    ,
+    "thumbnailImage": "https://cdn.dummyjson.com/product-images/smartphones/iphone-6/thumbnail.webp",
     "productImages": [
-      "tv_1.png",
-      "tv_2.png"
+      "https://cdn.dummyjson.com/product-images/smartphones/iphone-6/1.webp",
+      "https://cdn.dummyjson.com/product-images/smartphones/iphone-6/2.webp",
+      "https://cdn.dummyjson.com/product-images/smartphones/iphone-6/3.webp"
     ],
-    "stockCount": 9,
-    "salesCount": 32,
+    "stockCount": 60,
+    "salesCount": 39,
     "isAvailable": true,
-    "category": "Televisions",
-    "subCategory": "4K Smart TVs",
-    "unitPrice": 38900,
-    "sellingPrice": 34400,
-    "offerPrice": 31650,
+    "category": "Mobiles",
+    "subCategory": "iPhones",
+    "unitPrice": 24900,
+    "sellingPrice": 21900,
+    "offerPrice": 19900,
+    "discount": 20
+  },
+  {
+    "id": 123,
+    "productId": 123,
+    "productName": "iPhone 13 Pro",
+    "productSlug": "iphone-13-pro",
+    "productDesc": "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae alias delectus harum saepe nemo voluptatibus veniam, magni veritatis, maiores fuga aliquam ratione? Quis!"
+    , "thumbnailImage": "https://cdn.dummyjson.com/product-images/smartphones/iphone-13-pro/thumbnail.webp",
+    "productImages": [
+      "https://cdn.dummyjson.com/product-images/smartphones/iphone-13-pro/1.webp",
+      "https://cdn.dummyjson.com/product-images/smartphones/iphone-13-pro/2.webp",
+      "https://cdn.dummyjson.com/product-images/smartphones/iphone-13-pro/3.webp"
+    ],
+    "stockCount": 56,
+    "salesCount": 82,
+    "isAvailable": true,
+    "category": "Mobiles",
+    "subCategory": "iPhones",
+    "unitPrice": 99900,
+    "sellingPrice": 89900,
+    "offerPrice": 84900,
+    "discount": 15
+  },
+  {
+    "id": 125,
+    "productId": 125,
+    "productName": "Oppo A57",
+    "productDesc": "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae alias delectus harum saepe nemo voluptatibus veniam, magni veritatis, maiores fuga aliquam ratione? Quis!"
+    , "productSlug": "oppo-a57",
+    "thumbnailImage": "https://cdn.dummyjson.com/product-images/smartphones/oppo-a57/thumbnail.webp",
+    "productImages": [
+      "https://cdn.dummyjson.com/product-images/smartphones/oppo-a57/1.webp",
+      "https://cdn.dummyjson.com/product-images/smartphones/oppo-a57/2.webp",
+      "https://cdn.dummyjson.com/product-images/smartphones/oppo-a57/3.webp"
+    ],
+    "stockCount": 19,
+    "salesCount": 34,
+    "isAvailable": true,
+    "category": "Mobiles",
+    "subCategory": "Android Phones",
+    "unitPrice": 24900,
+    "sellingPrice": 21900,
+    "offerPrice": 19900,
+    "discount": 20
+  },
+  {
+    "id": 126,
+    "productId": 126,
+    "productName": "Oppo F19 Pro Plus",
+    "productSlug": "oppo-f19-pro-plus", "productDesc": "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae alias delectus harum saepe nemo voluptatibus veniam, magni veritatis, maiores fuga aliquam ratione? Quis!"
+    ,
+    "thumbnailImage": "https://cdn.dummyjson.com/product-images/smartphones/oppo-f19-pro-plus/thumbnail.webp",
+    "productImages": [
+      "https://cdn.dummyjson.com/product-images/smartphones/oppo-f19-pro-plus/1.webp",
+      "https://cdn.dummyjson.com/product-images/smartphones/oppo-f19-pro-plus/2.webp",
+      "https://cdn.dummyjson.com/product-images/smartphones/oppo-f19-pro-plus/3.webp"
+    ],
+    "stockCount": 78,
+    "salesCount": 46,
+    "isAvailable": true,
+    "category": "Mobiles",
+    "subCategory": "Android Phones",
+    "unitPrice": 39900,
+    "sellingPrice": 35900,
+    "offerPrice": 31900,
+    "discount": 20
+  },
+  {
+    "id": 128,
+    "productId": 128,
+    "productName": "Realme C35",
+    "productSlug": "realme-c35", "productDesc": "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae alias delectus harum saepe nemo voluptatibus veniam, magni veritatis, maiores fuga aliquam ratione? Quis!"
+    ,
+    "thumbnailImage": "https://cdn.dummyjson.com/product-images/smartphones/realme-c35/thumbnail.webp",
+    "productImages": [
+      "https://cdn.dummyjson.com/product-images/smartphones/realme-c35/1.webp",
+      "https://cdn.dummyjson.com/product-images/smartphones/realme-c35/2.webp",
+      "https://cdn.dummyjson.com/product-images/smartphones/realme-c35/3.webp"
+    ],
+    "stockCount": 48,
+    "salesCount": 71,
+    "isAvailable": true,
+    "category": "Mobiles",
+    "subCategory": "Android Phones",
+    "unitPrice": 15900,
+    "sellingPrice": 13900,
+    "offerPrice": 11900,
+    "discount": 25
+  },
+  {
+    "id": 129,
+    "productId": 129,
+    "productName": "Realme X",
+    "productSlug": "realme-x", "productDesc": "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae alias delectus harum saepe nemo voluptatibus veniam, magni veritatis, maiores fuga aliquam ratione? Quis!"
+    ,
+    "thumbnailImage": "https://cdn.dummyjson.com/product-images/smartphones/realme-x/thumbnail.webp",
+    "productImages": [
+      "https://cdn.dummyjson.com/product-images/smartphones/realme-x/1.webp",
+      "https://cdn.dummyjson.com/product-images/smartphones/realme-x/2.webp",
+      "https://cdn.dummyjson.com/product-images/smartphones/realme-x/3.webp"
+    ],
+    "stockCount": 12,
+    "salesCount": 28,
+    "isAvailable": true,
+    "category": "Mobiles",
+    "subCategory": "Android Phones",
+    "unitPrice": 29900,
+    "sellingPrice": 26900,
+    "offerPrice": 23900,
+    "discount": 20
+  },
+  {
+    "id": 131,
+    "productId": 131,
+    "productName": "Samsung Galaxy S7", "productDesc": "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae alias delectus harum saepe nemo voluptatibus veniam, magni veritatis, maiores fuga aliquam ratione? Quis!"
+    ,
+    "productSlug": "samsung-galaxy-s7",
+    "thumbnailImage": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s7/thumbnail.webp",
+    "productImages": [
+      "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s7/1.webp",
+      "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s7/2.webp",
+      "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s7/3.webp"
+    ],
+    "stockCount": 67,
+    "salesCount": 55,
+    "isAvailable": true,
+    "category": "Mobiles",
+    "subCategory": "Samsung Phones",
+    "unitPrice": 29900,
+    "sellingPrice": 25900,
+    "offerPrice": 22900,
+    "discount": 23
+  },
+  {
+    "id": 132,
+    "productId": 132,
+    "productName": "Samsung Galaxy S8",
+    "productSlug": "samsung-galaxy-s8", "productDesc": "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae alias delectus harum saepe nemo voluptatibus veniam, magni veritatis, maiores fuga aliquam ratione? Quis!"
+    ,
+    "thumbnailImage": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s8/thumbnail.webp",
+    "productImages": [
+      "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s8/1.webp",
+      "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s8/2.webp",
+      "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s8/3.webp"
+    ],
+    "stockCount": 42,
+    "salesCount": 37,
+    "isAvailable": true,
+    "category": "Mobiles",
+    "subCategory": "Samsung Phones",
+    "unitPrice": 49900,
+    "sellingPrice": 43900,
+    "offerPrice": 39900,
+    "discount": 20
+  },
+  {
+    "id": 133,
+    "productId": 133,
+    "productName": "Samsung Galaxy S10",
+    "productSlug": "samsung-galaxy-s10", "productDesc": "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae alias delectus harum saepe nemo voluptatibus veniam, magni veritatis, maiores fuga aliquam ratione? Quis!"
+    ,
+    "thumbnailImage": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/thumbnail.webp",
+    "productImages": [
+      "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/1.webp",
+      "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/2.webp",
+      "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/3.webp"
+    ],
+    "stockCount": 19,
+    "salesCount": 63,
+    "isAvailable": true,
+    "category": "Mobiles",
+    "subCategory": "Samsung Phones",
+    "unitPrice": 69900,
+    "sellingPrice": 61900,
+    "offerPrice": 56900,
     "discount": 19
   },
   {
-    "id": 611,
-    "productId": 611,
-    "productName": "Eureka Forbes Vacuum Cleaner",
-    "productSlug": "eureka-forbes-vacuum-cleaner",
-    "thumbnailImage": "vaccumCleaner.png",
+    "id": 134,
+    "productId": 134,
+    "productName": "Vivo S1",
+    "productSlug": "vivo-s1", "productDesc": "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae alias delectus harum saepe nemo voluptatibus veniam, magni veritatis, maiores fuga aliquam ratione? Quis!"
+    ,
+    "thumbnailImage": "https://cdn.dummyjson.com/product-images/smartphones/vivo-s1/thumbnail.webp",
     "productImages": [
-      "vaccumCleaner_1.png",
-      "vaccumCleaner_2.png"
+      "https://cdn.dummyjson.com/product-images/smartphones/vivo-s1/1.webp",
+      "https://cdn.dummyjson.com/product-images/smartphones/vivo-s1/2.webp",
+      "https://cdn.dummyjson.com/product-images/smartphones/vivo-s1/3.webp"
     ],
-    "stockCount": 27,
+    "stockCount": 50,
     "salesCount": 44,
     "isAvailable": true,
-    "category": "Cleaning Appliances",
-    "subCategory": "Vacuum Cleaners",
-    "unitPrice": 7650,
-    "sellingPrice": 6420,
-    "offerPrice": 5840,
+    "category": "Mobiles",
+    "subCategory": "Android Phones",
+    "unitPrice": 24900,
+    "sellingPrice": 21900,
+    "offerPrice": 18900,
     "discount": 24
   },
   {
-    "id": 297,
-    "productId": 297,
-    "productName": "Crompton High-Speed Fan",
-    "productSlug": "crompton-high-speed-fan",
-    "thumbnailImage": "cromptonFan.png",
+    "id": 78,
+    "productId": 78,
+    "productName": "Apple MacBook Pro 14 Inch",
+    "productSlug": "apple-macbook-pro-14-inch", "productDesc": "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae alias delectus harum saepe nemo voluptatibus veniam, magni veritatis, maiores fuga aliquam ratione? Quis!"
+    ,
+    "thumbnailImage": "https://cdn.dummyjson.com/product-images/laptops/apple-macbook-pro-14-inch-space-grey/thumbnail.webp",
     "productImages": [
-      "cromptonFan_1.png",
-      "cromptonFan_2.png",
+      "https://cdn.dummyjson.com/product-images/laptops/apple-macbook-pro-14-inch-space-grey/1.webp",
+      "https://cdn.dummyjson.com/product-images/laptops/apple-macbook-pro-14-inch-space-grey/2.webp",
+      "https://cdn.dummyjson.com/product-images/laptops/apple-macbook-pro-14-inch-space-grey/3.webp"
     ],
-    "stockCount": 48,
-    "salesCount": 69,
+    "stockCount": 24,
+    "salesCount": 38,
     "isAvailable": true,
-    "category": "Fans",
-    "subCategory": "Ceiling Fans",
-    "unitPrice": 3450,
-    "sellingPrice": 2980,
-    "offerPrice": 2710,
-    "discount": 21
+    "category": "Laptops",
+    "subCategory": "Apple Laptops",
+    "unitPrice": 169900,
+    "sellingPrice": 154900,
+    "offerPrice": 144900,
+    "discount": 15
+  },
+  {
+    "id": 79,
+    "productId": 79,
+    "productName": "Asus Zenbook Pro Dual Screen",
+    "productSlug": "asus-zenbook-pro-dual-screen", "productDesc": "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae alias delectus harum saepe nemo voluptatibus veniam, magni veritatis, maiores fuga aliquam ratione? Quis!"
+    ,
+    "thumbnailImage": "https://cdn.dummyjson.com/product-images/laptops/asus-zenbook-pro-dual-screen-laptop/thumbnail.webp",
+    "productImages": [
+      "https://cdn.dummyjson.com/product-images/laptops/asus-zenbook-pro-dual-screen-laptop/1.webp",
+      "https://cdn.dummyjson.com/product-images/laptops/asus-zenbook-pro-dual-screen-laptop/2.webp",
+      "https://cdn.dummyjson.com/product-images/laptops/asus-zenbook-pro-dual-screen-laptop/3.webp"
+    ],
+    "stockCount": 45,
+    "salesCount": 29,
+    "isAvailable": true,
+    "category": "Laptops",
+    "subCategory": "Premium Laptops",
+    "unitPrice": 152900,
+    "sellingPrice": 139900,
+    "offerPrice": 129900,
+    "discount": 15
+  },
+  {
+    "id": 80,
+    "productId": 80,
+    "productName": "Huawei MateBook X Pro",
+    "productSlug": "huawei-matebook-x-pro", "productDesc": "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae alias delectus harum saepe nemo voluptatibus veniam, magni veritatis, maiores fuga aliquam ratione? Quis!"
+    ,
+    "thumbnailImage": "https://cdn.dummyjson.com/product-images/laptops/huawei-matebook-x-pro/thumbnail.webp",
+    "productImages": [
+      "https://cdn.dummyjson.com/product-images/laptops/huawei-matebook-x-pro/1.webp",
+      "https://cdn.dummyjson.com/product-images/laptops/huawei-matebook-x-pro/2.webp",
+      "https://cdn.dummyjson.com/product-images/laptops/huawei-matebook-x-pro/3.webp"
+    ],
+    "stockCount": 75,
+    "salesCount": 32,
+    "isAvailable": true,
+    "category": "Laptops",
+    "subCategory": "Business Laptops",
+    "unitPrice": 118900,
+    "sellingPrice": 106900,
+    "offerPrice": 98900,
+    "discount": 17
+  },
+  {
+    "id": 81,
+    "productId": 81,
+    "productName": "Lenovo Yoga 920",
+    "productSlug": "lenovo-yoga-920", "productDesc": "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae alias delectus harum saepe nemo voluptatibus veniam, magni veritatis, maiores fuga aliquam ratione? Quis!"
+    ,
+    "thumbnailImage": "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/thumbnail.webp",
+    "productImages": [
+      "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/1.webp",
+      "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/2.webp",
+      "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/3.webp"
+    ],
+    "stockCount": 40,
+    "salesCount": 27,
+    "isAvailable": true,
+    "category": "Laptops",
+    "subCategory": "2-in-1 Laptops",
+    "unitPrice": 93900,
+    "sellingPrice": 84900,
+    "offerPrice": 77900,
+    "discount": 17
+  },
+  {
+    "id": 159,
+    "productId": 159,
+    "productName": "iPad Mini 2021 Starlight",
+    "productSlug": "ipad-mini-2021-starlight", "productDesc": "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae alias delectus harum saepe nemo voluptatibus veniam, magni veritatis, maiores fuga aliquam ratione? Quis!"
+    ,
+    "thumbnailImage": "https://cdn.dummyjson.com/product-images/tablets/ipad-mini-2021-starlight/thumbnail.webp",
+    "productImages": [
+      "https://cdn.dummyjson.com/product-images/tablets/ipad-mini-2021-starlight/1.webp",
+      "https://cdn.dummyjson.com/product-images/tablets/ipad-mini-2021-starlight/2.webp",
+      "https://cdn.dummyjson.com/product-images/tablets/ipad-mini-2021-starlight/3.webp"
+    ],
+    "stockCount": 47,
+    "salesCount": 36,
+    "isAvailable": true,
+    "category": "Tablets",
+    "subCategory": "Apple Tablets",
+    "unitPrice": 49900,
+    "sellingPrice": 44900,
+    "offerPrice": 40900,
+    "discount": 18
+  },
+  {
+    "id": 160,
+    "productId": 160,
+    "productName": "Samsung Galaxy Tab S8 Plus",
+    "productSlug": "samsung-galaxy-tab-s8-plus", "productDesc": "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae alias delectus harum saepe nemo voluptatibus veniam, magni veritatis, maiores fuga aliquam ratione? Quis!"
+    ,
+    "thumbnailImage": "https://cdn.dummyjson.com/product-images/tablets/samsung-galaxy-tab-s8-plus-grey/thumbnail.webp",
+    "productImages": [
+      "https://cdn.dummyjson.com/product-images/tablets/samsung-galaxy-tab-s8-plus-grey/1.webp",
+      "https://cdn.dummyjson.com/product-images/tablets/samsung-galaxy-tab-s8-plus-grey/2.webp",
+      "https://cdn.dummyjson.com/product-images/tablets/samsung-galaxy-tab-s8-plus-grey/3.webp"
+    ],
+    "stockCount": 62,
+    "salesCount": 48,
+    "isAvailable": true,
+    "category": "Tablets",
+    "subCategory": "Android Tablets",
+    "unitPrice": 59900,
+    "sellingPrice": 53900,
+    "offerPrice": 48900,
+    "discount": 18
+  },
+  {
+    "id": 100,
+    "productId": 100,
+    "productName": "Apple AirPods",
+    "productSlug": "apple-airpods", "productDesc": "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae alias delectus harum saepe nemo voluptatibus veniam, magni veritatis, maiores fuga aliquam ratione? Quis!"
+    ,
+    "thumbnailImage": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods/thumbnail.webp",
+    "productImages": [
+      "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods/1.webp",
+      "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods/2.webp",
+      "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods/3.webp"
+    ],
+    "stockCount": 67,
+    "salesCount": 91,
+    "isAvailable": true,
+    "category": "EarBuds",
+    "subCategory": "Apple Earbuds",
+    "unitPrice": 12900,
+    "sellingPrice": 11500,
+    "offerPrice": 9990,
+    "discount": 23
+  },
+  {
+    "id": 101,
+    "productId": 101,
+    "productName": "Apple AirPods Max Silver",
+    "productSlug": "apple-airpods-max-silver", "productDesc": "loremLorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestiae alias delectus harum saepe nemo voluptatibus veniam, magni veritatis, maiores fuga aliquam ratione? Quis!"
+    ,
+    "thumbnailImage": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods-max-silver/thumbnail.webp",
+    "productImages": [
+      "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods-max-silver/1.webp"
+    ],
+    "stockCount": 59,
+    "salesCount": 43,
+    "isAvailable": true,
+    "category": "EarBuds",
+    "subCategory": "Wireless Headphones",
+    "unitPrice": 54900,
+    "sellingPrice": 49900,
+    "offerPrice": 45900,
+    "discount": 16
   }
 ];
+export default products;
